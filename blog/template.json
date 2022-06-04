@@ -1,0 +1,12 @@
+{
+	"title":标题,
+	"file":文件,
+	"pic":背景路径,
+	"tag":[标签],
+	"priority":优先级,
+	"source":来源,
+	"link":[{名称:网址}],
+	"pswd":是否需要密码,
+	"date":时间,
+	"content":内容
+}

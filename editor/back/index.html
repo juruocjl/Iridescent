@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="dist/main.bundle.js"></script>
+	<meta charset="utf-8">
+</head>
+<body><div id="menu" class="menu"></div>
+	<div class="editor" style="display:inline-block" id="writing"><textarea style="height:100%;width:100%;border:0;" id="contain"></textarea></div>
+	<div class="editor" style="display:none" id="preview"><div class="markdown-body" style="overflow:scroll;height: 100%;"id="previewcontain"></div></div>
+	<div class="editor" style="display:none" id="setting">
+	<div style="overflow:scroll;height: 100%;">
+	标题：<input id="title"></input><br>
+	文件：<input id="file"></input> .json <br>
+	背景：<input id="bg"></input><br>
+	标签：<input id="tag"></input><button id="addtag">添加标签</button><button id="deltag">删除标签</button><br>
+	<span id="tags"></span>
+	<br>
+	优先：<input id="priority" type="number"></input><br>
+	来源：<input id="source"></input><br>
+	链接：洛谷 <input id="lglink"></input><br>
+	链接：ATC <input id="atlink"></input><br>
+	链接：CF <input id="cflink"></input><br>
+	链接：UOJ <input id="uojlink"></input><br>
+	链接：LOJ <input id="lojlink"></input><br>
+	链接：<input id="link1"></input> <input id="link2"></input><br>
+	密码：<input id="pswd" type="checkbox"></input><br>
+	时间：<input id="date"></input><br>
+	<button id="delete">删除</button>
+	</div>
+	</div>
+	<span style="position:fixed;right:20px;bottom:20px;"><a id="toe"></a>&nbsp;&nbsp;<a id="top"></a>&nbsp;&nbsp;<a id="tos"></a></span></body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/loading.css">
+</head>
+<body style="height:100%;width:100%;margin:0;position: relative;">
+	<div id="cubes" class="cubes" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);"><div class="sk-cube sk-cube1"></div><div class="sk-cube sk-cube2"></div><div class="sk-cube sk-cube3"></div><div class="sk-cube sk-cube4"></div><div class="sk-cube sk-cube5"></div><div class="sk-cube sk-cube6"></div><div class="sk-cube sk-cube7"></div><div class="sk-cube sk-cube8"></div><div class="sk-cube sk-cube9"></div></div>
+	
+    <script async src="/katex/dist/katex.min.js"></script>
+	<script async src="/katex/dist/contrib/auto-render.min.js" 
+	onload="renderMathInElement(document.body,{delimiters:[{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: true}]});"></script>
+	<script src="/dist/article.bundle.js"></script>
+	<div id="contain" style="display:none;" class="contain">
+		<nav class="navbar-nav">
+			<div id="navbar-title" style="color:#666;font-size:20px;margin-top: 15px;opacity:0;" class="navbar-title"></div>
+			<span class="progressbar" id="progressbar"></span>
+			<a href="/" style="position: absolute;top: 9px;left: 22px;" id="lstpage"></a>
+			<a href="/" style="position: absolute;top: 9px;left: 60px;" id="home"></a>
+			<a href="https://github.com/juruocjl/Iridescent" style="position: absolute;top: 9px;right: 22px;" id="github"></a>
+			<a style="position: absolute;top: 9px;right: 60px;" id="setting"></a>
+			<a style="position: absolute;top: 9px;right: 98px;" id="scan">
+				<div style="position:absolute;transform: translate(-40%,-50%);top: 90px;height: 100px;width: 100px;opacity:0;display:none;" id="qrcode">
+					<img src="" id="qrcodeimg"></img>
+				</div>
+			</a>
+		</nav>
+		<div style="width:0;height:20px;"></div>
+		<div id="cover" class="cover">
+			<img src="bg/0.jpg" style="width:100%" id="coverimg"></img>
+			<div class="coverhover"></div>
+		</div>
+		<div id="content" class="card markdown-body">
+			
+		</div>
+		<div id="comment" class="card">
+			什么也没有
+        </div>
+		<div style="position: absolute;bottom: 10px;width: 100%;text-align: center;color:#999;">
+			<a href="https://github.com/juruocjl/Iridescent">Iridescent</a> made by juruocjl<br>
+			上一次更新 <span id="lstupdate">时间</span>
+		</div>
+	</div>
+</body>
+</html>

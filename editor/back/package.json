@@ -1,0 +1,31 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "main.js",
+  "repository": "https://github.com/chenjialiang666/Iridescent",
+  "author": "juruocjl",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "electron": "^19.0.2",
+    "electron-builder": "^23.0.3"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux AppImage"
+  },
+  "build": {
+    "appId": "com.editor.app",
+    "linux": {
+      "category": "blog.editor.type"
+    },
+    "directories": {
+        "output": "build"
+    },
+    "extraResources":  { 
+        "from": "./dist/",
+        "to": "dist"
+    }
+  }
+}
